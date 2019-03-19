@@ -4,8 +4,6 @@
 
 <p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
 
-***
-
 <p align="center">
     <b><a href="README.md#what-has-inside">What has inside</a></b>
     |
