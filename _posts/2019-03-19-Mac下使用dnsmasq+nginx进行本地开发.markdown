@@ -1,8 +1,11 @@
 ---
 title: Mac下使用dnsmasq+nginx进行本地开发
+layout: post
+category: blog
+tags: |-
+  nginx
+  dnsmasq
 ---
-
-@[TOC](Mac下使用dnsmasq+nginx进行本地开发
 
 # 前言
 最近刚刚开始使用Mac进行开发，有点不熟练，借着部署环境分享下使用Dnsmasq进行域名管理。大多数web开发者可能都是使用hosts 或者 端口号进行项目访问，这就有以下问题：
