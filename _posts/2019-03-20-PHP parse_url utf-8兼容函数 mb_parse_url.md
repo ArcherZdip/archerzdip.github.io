@@ -7,7 +7,13 @@ tags: |-
   Strings
 ---
 
-@[TOC]
+<!-- TOC -->
+
+- [简介](#简介)
+- [mb_parse_url](#mb_parse_url)
+
+<!-- /TOC -->
+
 ## 简介
 使用parse_url 对以下url进行解析时会出现乱码,（这种URL正常是被允许的，应该在后端进行命名）
 ```php

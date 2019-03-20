@@ -6,15 +6,24 @@ tags: |-
   nginx
   dnsmasq
 ---
+<!-- TOC -->
 
-# 前言
+- [1. 前言](#1-前言)
+- [2. 安装dnsmasq](#2-安装dnsmasq)
+- [3. 配置dnsmasq](#3-配置dnsmasq)
+- [4. 配置macOS](#4-配置macos)
+- [5. 测试](#5-测试)
+- [6. nginx](#6-nginx)
+
+<!-- /TOC -->
+# 1. 前言
 最近刚刚开始使用Mac进行开发，有点不熟练，借着部署环境分享下使用Dnsmasq进行域名管理。大多数web开发者可能都是使用hosts 或者 端口号进行项目访问，这就有以下问题：
 1. 需要你在添加项目或者删除项目时每次对配置文件进行修改
 2. 需要管理员权限
 
 DNSmasq是一个小巧且方便地用于配置DNS和DHCP的工具，适用于小型网络，它提供了DNS功能和可选择的DHCP功能。它服务那些只在本地适用的域名，这些域名是不会在全球的DNS服务器中出现的。DHCP服务器和DNS服务器结合，并且允许DHCP分配的地址能在DNS中正常解析，而这些DHCP分配的地址和相关命令可以配置到每台主机中，也可以配置到一台核心设备中（比如路由器），DNSmasq支持静态和动态两种DHCP配置方式。（来自百度百科）
 
-# 安装dnsmasq
+# 2. 安装dnsmasq
 我的开发环境是PHP7.2 mysql5.7 nginx， 这些基础环境的部署这里就不进行说明了。
 Mac下的dnsmasq还是很有很多安装方式的，因为刚刚接触我目前熟练的只有[HomeBrew](https://brew.sh/)。
 安装方法：
@@ -29,7 +38,7 @@ brew install dnsmasq
 建议使用brew services管理服务
 官网：https://github.com/Homebrew/homebrew-services
 
-# 配置dnsmasq
+# 3. 配置dnsmasq
 
 使用brew安装的软件默认路径在/etc/local 目录下，其中配置文件在/etc/local/etc目录中：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110120540296.png)
@@ -46,7 +55,7 @@ brew services start dnsmasq
 可查看服务：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110121308943.png)
 
-# 配置macOS
+# 4. 配置macOS
 现在你已经有了一个可以工作的 DNS 服务器，你可以在自己的操作系统上配置来使用它。有使用两种方法：
 
 1. 发送所有 DNS 请求到 Dnsmasq
@@ -68,11 +77,11 @@ sudo mkdir /etc/resolver
 一旦你创建了这个文件，macOS 将会自动读取并完成。
 ps: 目前现在只发现配置在<kbd>/etc/resolver</kbd>下可以，没搞懂配置在<kbd>/etc/resolv.conf</kbd>为什么没生效？
 
-# 测试
+# 5. 测试
 至此，你ping任何以.devel结尾的域名就会解析到本地，无论地址是否存在：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110122347860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
 
-# nginx
+# 6. nginx
 当然直到目前为止感觉没有太大作用，dnsmasq只是作为dns解析，其他就需要借助nginx来完成了。
 nginx.conf配置
 ```
