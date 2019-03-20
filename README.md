@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-    <img src="https://archerzdip.github.io/assets/screen-shot.png" />
+    <img src="https://archerzdip.github.io/assets/screen-shot.jpg" />
 </p>
 
 ## Setup
