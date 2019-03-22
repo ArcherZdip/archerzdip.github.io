@@ -73,8 +73,8 @@ Options:
 
 ```
 可以使用-l 指定获取条数，-P 指定省份，-S 指定性别，-B 指定生日
-![在这里插入图片描述](https://archerzdip.github.io/assets/postn/20190307152137134.png)
-![在这里插入图片描述](https://archerzdip.github.io/assets/postn/20190307152244723.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190307152137134.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190307152244723.png)
 
 验证身份证号码正确性：
 ```
@@ -88,7 +88,7 @@ Arguments:
 ```
 如：
 正确的号码：
-![在这里插入图片描述](https://archerzdip.github.io/assets/postn/20190307152350211.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190307152350211.png)
 
 错误的号码：
-![在这里插入图片描述](https://archerzdip.github.io/assets/postn/2019030715241350.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/2019030715241350.png)
