@@ -22,7 +22,7 @@ print_r(parse_url($url));
 ```
 
 结果：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190311124536173.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190311124536173.png)
 
 ## mb_parse_url
 在(http://php.net/manual/zh/function.parse-url.php)中有相关的兼容UTF-8的方法，但是感觉不能完全兼容parse_url。
@@ -63,10 +63,10 @@ if (!function_exists('mb_parse_url')) {
 ```
 
 结果:
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190311125120445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190311125120445.png)
 
 并可以传入parse_url中的相关参数`component`,指定 PHP_URL_SCHEME、 PHP_URL_HOST、 PHP_URL_PORT、 PHP_URL_USER、 PHP_URL_PASS、 PHP_URL_PATH、 PHP_URL_QUERY 或 PHP_URL_FRAGMENT 的其中一个来获取 URL 中指定的部分的 string。 （除了指定为 PHP_URL_PORT 后，将返回一个 integer 的值）。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190311125318537.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190311125318537.png)
 
 ==================================
 由于本人水平有限，文章在表述和代码方面如有不妥之处，欢迎批评指正。

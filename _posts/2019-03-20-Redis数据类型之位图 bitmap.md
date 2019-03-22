@@ -49,33 +49,33 @@ offset:为查询的位
 ![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190312192108387.png)
 
 使用get获取：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190312220856844.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190312220856844.png)
 
 \xa4H = \xa4 \x48 (因为 0x48的ascii码为H）
-二进制为： 1 0 1 0 0 1 0 0    0 1 0 0 1 0 0 0 即分别在0 2 5 9 12 位置上为1.
+二进制为： `1 0 1 0 0 1 0 0    0 1 0 0 1 0 0 0` 即分别在`0 2 5 9 12` 位置上为1.
 
 ## 统计范围内1的个数
 
 语法`BITCOUNT key [start end]`
 获取位图指定位置（start到end，单位是字节，如果不指定就是获取全部）位值为1的个数。
 例子1：不指定开始结束
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190312221547841.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190312221547841.png)
 
 例子2：只获取第一个字节里的个数
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019031222163979.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/2019031222163979.png)
 
 例子3：只获取第二个字节里的个数
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190312221739480.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190312221739480.png)
 0表示从左到右，-1表示从右到左,所以BITCOUNT key 0 -1 为统计所有的。
 
 ## 查找第一次0或者1出现的位置
 语法`BITPOS key bit [start end]`
 例子1：查找第一0出现的位置
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190312222805822.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190312222805822.png)
 
 例子2：在第2个字节中查找`1`第一次出现的位置
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190312222918904.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190312222918904.png)
 
 **注：这里的start，end也是字节**
 
@@ -87,13 +87,13 @@ operation：支持AND OR XOR NOT四种操作
 - BITOP XOR destkey srckey1 … srckeyN，对一个或多个 key 求逻辑异或，并将结果保存到 destkey
 - BITOP NOT destkey srckey，对给定 key 求逻辑非，并将结果保存到 destkey
 例子1：对key进行逻辑非
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019031222352359.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/2019031222352359.png)
 
 [\xb7 = \x5b \xb7
 例子2：对desckey和key进行逻辑与
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019031222353816.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/2019031222353816.png)
 
-结果恰好为 0 0 0 0 0 0 0 0   0 0 0 0 0 0 0 0 
+结果恰好为 `0 0 0 0 0 0 0 0   0 0 0 0 0 0 0 0`
 
 
 ## 使用场景

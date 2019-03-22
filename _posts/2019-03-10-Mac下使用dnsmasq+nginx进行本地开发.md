@@ -41,7 +41,7 @@ brew install dnsmasq
 # 3. 配置dnsmasq
 
 使用brew安装的软件默认路径在/etc/local 目录下，其中配置文件在/etc/local/etc目录中：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110120540296.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190110120540296.png)
 
 Dnsmasq 可以做的很多事情之一是将 DNS 请求与模式数据库进行比较，并以此来确定正确的应答。我使用这个功能来匹配以 .devel 结尾的任何请求，并发送 <kbd>127.0.0.1</kbd> 作为应答。Dnsmasq 配置指令非常容易,打开dnsmasq.conf配置，修改：
 ```
@@ -53,7 +53,7 @@ address=/devel/127.0.0.1
 brew services start dnsmasq
 ```
 可查看服务：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110121308943.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190110121308943.png)
 
 # 4. 配置macOS
 现在你已经有了一个可以工作的 DNS 服务器，你可以在自己的操作系统上配置来使用它。有使用两种方法：
@@ -71,7 +71,7 @@ macOS 也允许你通过在 /etc/resolver 文件夹中创建新的配置文件�
 sudo mkdir /etc/resolver
 ```
 在此目录创建devel文件，并写人<kbd>nameserver 127.0.0.1</kbd>
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110121843213.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190110121843213.png)
 在这里，<kbd>devel </kbd>是我配置 Dnsmasq 来响应的顶级域名，<kbd>127.0.0.1 </kbd>是要使用的服务器的 IP 地址。
 
 一旦你创建了这个文件，macOS 将会自动读取并完成。
@@ -79,7 +79,7 @@ ps: 目前现在只发现配置在<kbd>/etc/resolver</kbd>下可以，没搞懂�
 
 # 5. 测试
 至此，你ping任何以.devel结尾的域名就会解析到本地，无论地址是否存在：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110122347860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190110122347860.png)
 
 # 6. nginx
 当然直到目前为止感觉没有太大作用，dnsmasq只是作为dns解析，其他就需要借助nginx来完成了。
@@ -186,10 +186,10 @@ server {
 }
 ```
 至此你只需在你的网站根目录建立项目文件夹，如demo，然后在浏览器上访问<kbd>http://demo.devel </kbd> 即可访问该项目。 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110123551962.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110123620397.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190110123551962.png)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190110123620397.png)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190110123735609.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pkaXAxMjM=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://archerzdip.github.io/assets/post/20190110123735609.png)
 
 ps: 
 1. 因为顶级域名devel 不存在，所以访问记得加上http:// 。
