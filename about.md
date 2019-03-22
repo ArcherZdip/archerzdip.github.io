@@ -46,5 +46,5 @@ layout: page
 
 <h2>联系</h2>
 
-[QQ:646121218@qq.com](mailto:646121218@qq.com)  
-[Gamil:zhanglingyu0427@gmail.com](mailto:zhanglingyu0427@gmail.com)
+[QQ: 646121218@qq.com](mailto:646121218@qq.com)  
+[Gamil: zhanglingyu0427@gmail.com](mailto:zhanglingyu0427@gmail.com)
