@@ -11,18 +11,18 @@ tags: |-
 前提安装zsh
 
 ## oh my zsh 
-[github](`https://github.com/robbyrussell/oh-my-zsh`)
+[github](https://github.com/robbyrussell/oh-my-zsh)
 
-[官网](`https://ohmyz.sh`)
+[官网](https://ohmyz.sh)
 
 
 ## zsh-autosuggestions 提示
-[zsh-autosuggestions](`https://github.com/zsh-users/zsh-autosuggestions`)
+[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ## 主题 dracula-theme
-[dracula-theme](`https://github.com/dracula/dracula-theme`)
+[dracula-theme](https://github.com/dracula/dracula-theme)
 
-[官网](`https://draculatheme.com/`)
+[官网](https://draculatheme.com/)
 
 
 -----------
