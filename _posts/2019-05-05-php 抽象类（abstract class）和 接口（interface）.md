@@ -7,6 +7,18 @@ tags: |-
   abstract class
   interface
 ---
+<!-- TOC -->
+
+- [PHP抽象类（abstract class）和接口（interface）简介](#php抽象类abstract-class和接口interface简介)
+    - [抽象类（abstract class）](#抽象类abstract-class)
+    - [接口（interface）](#接口interface)
+    - [抽象类和接口的异同](#抽象类和接口的异同)
+    - [相同点：](#相同点)
+    - [不同点：](#不同点)
+    - [interface 的应用场合](#interface-的应用场合)
+    - [abstract class 的应用场合](#abstract-class-的应用场合)
+
+<!-- /TOC -->
 
 # PHP抽象类（abstract class）和接口（interface）简介
 
