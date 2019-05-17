@@ -4,6 +4,7 @@ layout: post
 category: blog
 tags: |-
   Linux
+  Shell
   Echo
 ---
 
@@ -70,6 +71,8 @@ echo -e "\033[47;30m 白底黑字 \033[0m"
 - \33[?25l 隐藏光标 
 - \33[?25h 显示光标 
 
-例子：
+**例子：**
+```bash
 echo -e "\033[35m \033[4m 紫色字 \033[0m"  
 echo -e "\033[35m \033[2J 紫色字 \033[0m"  
+```
