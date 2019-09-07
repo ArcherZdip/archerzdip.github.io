@@ -29,7 +29,7 @@ tags: |-
 
 **浏览互联网资源**
 
-前面在[概述篇](https://articles.zsxq.com/id_dbuiuc1bwwpt.html)中我们已经提到，URL 是统一资源定位符（Uniform Resource Location）的英文缩写，是浏览器寻找信息时所需的资源位置描述，通过 URL，才能找到、使用并共享互联网上大量的数据资源。
+前面在[概述篇](<https://archerzdip.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E7%B3%BB%E5%88%97-HTTP-%E5%8D%8F%E8%AE%AE%E7%AF%87-HTTP-%E6%A6%82%E8%BF%B0-%E4%B8%8A/>)中我们已经提到，URL 是统一资源定位符（Uniform Resource Location）的英文缩写，是浏览器寻找信息时所需的资源位置描述，通过 URL，才能找到、使用并共享互联网上大量的数据资源。
 
 URI（统一资源标识符）是一类更通用的资源标识符，URL 实际上是它的一个子集。URI 是一个通用的概念，有两个主要的子集 URL 和 URN 构成，URL 是通过描述资源的位置来标识资源的，而 URN 则是通过名字来识别资源的，与它们当前所处的位置无关。
 
