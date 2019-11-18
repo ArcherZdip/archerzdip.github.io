@@ -32,7 +32,7 @@ tags: |-
 
 Nginx 作为负载均衡服务器：Nginx 既可以在内部直接支持 Rails 和 PHP 程序对外进行服务，也可以支持作为 HTTP 代理服务器对外进行服务。Nginx 采用 C 进行编写，不论是系统资源开销还是 CPU 使用效率都比 Perlbal 要好很多。
 
-[![我为什么推荐大家使用 Nginx 而不是 Apache？](assets/post/2018071108573123.png)](https://www.imydl.com/wp-content/uploads/2018/07/2018071108573123.png)
+[![我为什么推荐大家使用 Nginx 而不是 Apache？](/assets/post/2018071108573123.png)](https://www.imydl.com/wp-content/uploads/2018/07/2018071108573123.png)
 
 2、Nginx 配置简洁,Apache 复杂，Nginx 启动特别容易,并且几乎可以做到 7*24 不间断运行，即使运行数个月也不需要重新启动。你还能够不间断服务的情况下进行软件版本的升级。Nginx 静态处理性能比 Apache 高 3 倍以上，Apache 对 PHP 支持比较简单，Nginx 需要配合其他后端来使用，Apache 的组件比 Nginx 多。
 
