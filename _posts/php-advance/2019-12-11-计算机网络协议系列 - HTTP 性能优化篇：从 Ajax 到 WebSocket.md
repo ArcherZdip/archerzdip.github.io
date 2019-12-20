@@ -6,15 +6,11 @@ layout: post
 category: blog
 
 tags: |-
-
   PHP
-
   计算机网络协议系列
-  
   HTTP 协议篇
-
   Ajax
-WebSocket
+  WebSocket
 ---
 
 
