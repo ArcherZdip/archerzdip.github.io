@@ -1,19 +1,12 @@
 ---
 title: 计算机网络协议系列 - HTTP 性能优化篇：WebSocket 服务器和客户端的简单实现
-
 layout: post
-
 category: blog
-
 tags: |-
-
   PHP
-
   计算机网络协议系列
-  
   HTTP 协议篇
-
-WebSocket
+  WebSocket
 ---
 
 
