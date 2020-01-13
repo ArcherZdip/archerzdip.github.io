@@ -20,8 +20,8 @@ tags: |-
 
 
 
-- [分布式数据一致性工业级解决方案 —— Zookeeper （一）](https://t.zsxq.com/fmiE2vJ)
-- [分布式数据一致性工业级解决方案 —— Zookeeper （二）](https://t.zsxq.com/3b2VrfA)
+- [分布式数据一致性工业级解决方案 —— Zookeeper （一）](/分布式数据一致性工业级解决方案-Zookeeper-一/)
+- [分布式数据一致性工业级解决方案 —— Zookeeper （二）](/分布式数据一致性工业级解决方案-Zookeeper-二/)
 
 
 
