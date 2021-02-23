@@ -9,7 +9,7 @@ layout: page
 <ul class="skill-list">
 	<li>个人信息： 张凌宇/男</li>
 	<li>教育经历： 沈阳理工大学/计算机应用技术/硕士学位</li>
-	<li>工作年限： 6年</li>
+	<li>工作年限： 71年</li>
 	<li>工作职位： 资深开发工程师</li>
 
 </ul>
